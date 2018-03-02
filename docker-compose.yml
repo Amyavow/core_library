@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  nodeadams:
+    build: 
+      context: .
+      dockerfile: test.Dockerfile
+    image: noderabbit
+    ports:
+      - "2000:2000"
+      - "3000:3000"
+    volumes:
+      - /c/Users/travis_ci:/opt/app
+
+
